@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rendex Key System</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0f2e, #1a1a3d);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .glass-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+      padding: 40px;
+      text-align: center;
+      width: 90%;
+      max-width: 420px;
+    }
+
+    .glass-container h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #00ffff, #00ff88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass-container p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #cfcfcf;
+    }
+
+    .btn-glow {
+      background: linear-gradient(90deg, #00ffff, #00ff88);
+      border: none;
+      color: #0f0f2e;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 12px #00ffee90;
+    }
+
+    .btn-glow:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffee;
+    }
+
+    @media (max-width: 600px) {
+      .glass-container h1 {
+        font-size: 1.5rem;
+      }
+
+      .btn-glow {
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="glass-container">
+    <h1>🔑 Get Your Key</h1>
+    <p>Click the button below to be redirected to generate your key.</p>
+    <button class="btn-glow" onclick="redirectToKey()">Get Key</button>
+  </div>
+
+  <script>
+    function redirectToKey() {
+      window.location.href = "https://work.ink/yourlinkhere"; // 🔁 Replace with your real work.ink
+    }
+  </script>
+</body>
+</html>
